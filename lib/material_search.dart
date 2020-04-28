@@ -268,10 +268,6 @@ class _MaterialSearchInputState<T> extends State<MaterialSearchInput<T>> {
 
   _buildMaterialSearchPage(BuildContext context) {
     return new _MaterialSearchPageRoute<T>(
-      settings: new RouteSettings(
-        name: 'material_search',
-        isInitialRoute: false,
-      ),
       builder: (BuildContext context) {
         return new Material(
           child: new MaterialSearch<T>(
